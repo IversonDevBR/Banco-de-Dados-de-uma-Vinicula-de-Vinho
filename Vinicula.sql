@@ -60,7 +60,7 @@ from Vinho
 join Vinicola on Vinho.codVinicola = Vinicola.codVinicola
 join Regiao on Vinicola.codRegiao = Regiao.codRegiao; 	
 
-CREATE USER 'sommelier'@'localhost' identified BY 'canguru123' with max_queries_per_hour 40;
+CREATE USER ''@'' identified BY '' with max_queries_per_hour 40;
 
 grant select on sistemofiverson.Vinho to 'sommelier'@'localhost';
 grant select (codVinicola, nomeVinicola) on sistemofiverson.Vinicola to 'sommelier'@'localhost';
